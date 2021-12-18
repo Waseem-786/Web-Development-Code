@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .was{
+            background-color: rgb(70, 70, 70);
+            border-radius: 17px;
+            color: yellow;
+        }
+        ul{
+            overflow: auto;    /*For Background Color*/
+        }
+
+        .navi li{
+            float: left;
+            list-style: none;
+            margin: 5px 16px;
+            padding: 6px;
+            cursor: pointer;
+        }
+        .hov:hover{
+            color: orange;
+        }
+        .btn{
+            float: right;
+            padding: 4px 20px;
+            margin: 4px 20px;
+            border: 2px solid rgb(70, 70, 70);
+            
+
+        }
+        input{
+            width: 180px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="was">
+        <ul class="navi">
+            <li class="hov">Home</li>
+            <li class="hov">About</li>
+            <li class="hov">Services</li>
+            <li class="hov">Contact us</li>
+            <div class="btn">
+                <input type="text" name="button" id="button" placeholder="Search here">
+            </div>
+        </ul>
+    </nav>
+    
+</body>
+</html>

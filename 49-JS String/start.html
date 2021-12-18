@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="container">
+        <h1>Strings</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus a at adipisci. Quasi esse delectus perspiciatis quae. Quibusdam aspernatur, dolor veritatis iusto similique dolorum distinctio quos velit molestias fugiat?
+        <div id="container"></div>
+    </div>
+    <script>
+        // We can write string in three ways, If we want to see ' in code the use "Har'yy" and vice versa.
+        var String1 = 'Najaf';
+        var String2 = "Zain";
+        var String3 = `${String2} Waseem`;
+        // use only in this
+        console.log(String1 + String2 + String3);
+        var length = String2.length
+        console.log('\n');
+        // Escape sequence
+        console.log(`Length of String2 is : ${length}`);
+        // By this we can write content in HTML
+        document.getElementById('container').innerHTML = '<h1>WASEEM</h1>';
+        
+    </script>
+</body>
+</html>

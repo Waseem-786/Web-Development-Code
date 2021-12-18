@@ -1,0 +1,333 @@
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+header #navbar{
+    background-color: black;
+    border-radius: 6px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul #travel_list{
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 15px;
+    color: yellow;
+    align-self: center;
+    font-size: 30px;
+    position: relative;
+    animation: travel 1s infinite;
+}
+@keyframes travel {
+    0%
+    {
+        left: 0px;
+    }
+    50%
+    {
+        left: -60px;
+    }
+    100%
+    {
+        left: 0px;
+        
+    }
+}
+#navbar ul img{
+    margin-right: 30px;
+    align-self: center;
+    height: 40px;   
+    width: 70px;
+    transition: all 1s ease-in-out 0s;
+}
+#navbar ul img:hover{
+    height: 50px;
+    width: 80px;
+}
+#navbar ul .list{
+    padding: 3px 7px;
+    list-style: none;
+    align-self: center;
+    margin: 15px 25px;
+    font-size: 18px;
+}
+#navbar ul .list a{
+    text-decoration: none;
+    color: white;
+}
+#navbar ul .list:hover{
+    color: rgb(255, 255, 0);
+    cursor: pointer;
+    background-color: rgb(0, 191, 255);
+    border-radius: 6px;
+}
+
+
+/* Section starts*/
+
+#first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#first h1{
+    font-size: 50px;
+}
+#first p{
+    color: rgb(6, 247, 255);
+    font-size: 18px;
+    text-align: center;
+    width: 400px;
+}
+#first::before{
+    content: "";
+    background: url('/Pictures/Logo.jpeg') no-repeat center center;
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    width: 100vw;
+    height: 550px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Car Starts */
+
+#car{
+    background-color: chartreuse;
+    margin-top: 34px;
+    display: flex;
+    /* border: 2px solid royalblue; */
+}
+#car #car_heading{
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 3px 3px green;
+    animation: car 5s infinite;
+}
+@keyframes car {
+    0%{
+        margin-left: -450px;
+    }
+    25%{
+        margin-left: 450px;
+    }
+    50%{
+        margin-left: -450px;
+    }
+    75%{
+        margin-left: 450px;
+    }
+    100%{
+        margin-left: -450px;
+    }
+}
+#car #car_heading:hover{
+    font-size: 45px;
+    background-color: black;
+    border-radius: 30px;
+
+}
+#car div{
+    display: flex;
+    flex-direction: column;
+}
+#car img{
+    margin-right: -8px;
+    height: 400px;
+    width: 500px;
+}
+#car div p{
+    text-align: center;
+    align-self: center;
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+
+/* Bike Starts */
+
+#bike{
+    background-color: rgb(19, 202, 226);
+    margin-top: 0px;
+    display: flex;
+    /* border: 2px solid royalblue; */
+}
+#bike #bike_heading{
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+    animation: bike 5s infinite;
+}
+@keyframes bike {
+    0%{
+        margin-left: -450px;
+    }
+    25%{
+        margin-left: 450px;
+    }
+    50%{
+        margin-left: -450px;
+    }
+    75%{
+        margin-left: 450px;
+    }
+    100%{
+        margin-left: -450px;
+    }
+}
+#bike #bike_heading:hover{
+    font-size: 45px;
+    background-color: black;
+    border-radius: 30px;
+}
+#bike div{
+    display: flex;
+    flex-direction: column;
+}
+#bike img{
+    margin-right: -8px;
+    height: 400px;
+    width: 500px;
+}
+#bike div p{
+    text-align: center;
+    align-self: center;
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Bicycle Starts */
+#Bicycle{
+    background-color: rgb(255, 61, 2);
+    margin-top: 0px;
+    display: flex;
+    /* border: 2px solid royalblue; */
+}
+#Bicycle #Bicycle_heading{
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+    animation: bicycle 5s infinite;
+}
+@keyframes bicycle {
+    0%{
+        margin-left: -450px;
+    }
+    25%{
+        margin-left: 450px;
+    }
+    50%{
+        margin-left: -450px;
+    }
+    75%{
+        margin-left: 450px;
+    }
+    100%{
+        margin-left: -450px;
+    }
+}
+#Bicycle #Bicycle_heading:hover{
+    font-size: 45px;
+    background-color: black;
+    border-radius: 30px;
+}
+#Bicycle div{
+    display: flex;
+    flex-direction: column;
+}
+#Bicycle img{
+    margin-right: -8px;
+    height: 400px;
+    width: 500px;
+}
+#Bicycle div p{
+    text-align: center;
+    align-self: center;
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Clients Starts */
+#clients{
+    margin-top: 0px;
+    background-color: yellow;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#clients p{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    font-weight: bold;
+}
+#clients div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients div img{
+    width: 250px;
+}
+
+/* Contact us starts */
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+#contact::after{
+    content: "";
+    background: url('/Pictures/web.jpg') no-repeat center center;
+    position: absolute;
+    top: 2200px;
+    left: 0px;
+    width: 100vw;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact p{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    font-weight: bold;    
+}
+#contact div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact div label{
+    font-size: 25px;
+    color: black;
+}
+#contact div input[type='text'] , input[type='email']{
+    background-color: lightgrey;
+    width: 270px;
+    height: 25px;
+}
+#contact div textarea{
+    background-color: lightgrey;
+}

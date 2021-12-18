@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .list{
+            list-style: none;
+            padding: 1px 20px;
+            margin: 10px 20px;
+            /* border: 2px solid red; */
+            background-color: teal;
+            /* box-shadow: off-set-x    off-set-y     blur radius    spread radius    color */
+            /* blur radius spread the color and brightens */
+            /* spread radius spread color in all axis without changing the color */
+            /* negative number also exist which means that shadow goes to up on box */
+            box-shadow: 4px 7px 3px 5px rgba(29, 182, 29, 0.5);
+            /*  in rgba alpha means darkness of color   */
+
+
+            /* For inside the box shadow we use inset */
+            box-shadow: inset 6px -8px black;
+            /* We can also use multi-shadows */
+            box-shadow: 4px 5px gray , 7px 9px rgba(12, 12, 235, 0.6) ;
+        }
+        .list h1{
+            /* spread radius not exist in text-shadow */
+            text-shadow: 2px 3px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <li class="list" id="list-1">
+            <h1>Card-1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sequi cumque autem eos, commodi delectus inventore? Facere fugit dolor aliquid impedit, vitae, nam quo temporibus maiores similique sunt error ab voluptate odit, minima reiciendis!</p>
+        </li>
+        <li class="list" id="list-2">
+            <h1>Card-2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sequi cumque autem eos, commodi delectus inventore? Facere fugit dolor aliquid impedit, vitae, nam quo temporibus maiores similique sunt error ab voluptate odit, minima reiciendis!</p>
+        </li>
+        <li class="list" id="list-3">
+            <h1>Card-3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sequi cumque autem eos, commodi delectus inventore? Facere fugit dolor aliquid impedit, vitae, nam quo temporibus maiores similique sunt error ab voluptate odit, minima reiciendis!</p>
+        </li>
+    </div>
+</body>
+</html>

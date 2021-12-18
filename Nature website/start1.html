@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }        
+        body{
+            background-color: black;
+            color: rgb(37 166 21);
+            height: 90vh;
+        }
+        .navigation{
+            background-color: black;
+            border-radius: 10px;
+            opacity: 0.6;
+        }
+        ul > img{
+            margin: 9px 13px;
+            border-radius: 10px;
+            width: 80px;
+            height: 50px;
+        }
+        ul{
+            display: flex;
+        }
+        .list{
+            list-style: none;
+            font-weight: bold;
+            margin: 16px 25px;
+
+        }
+        #list-3{
+            margin-right: 740px;
+            font-size: 30px;
+        }
+        input{
+            cursor: pointer;
+            width: 57px;
+            height: 30px;
+            background-color: rgb(37 166 21);
+            margin-left: 20px;
+        }
+        header::before{
+            content: "";
+            background: url('/Pictures/travel.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        p{
+            width: 45px;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            color: white;
+            height: 400px;
+            font-size: 50px;
+        }
+        .sponsor{
+            cursor: pointer;
+            margin-left: 150px;
+            width: 200px;
+        }
+        h1{
+            position: relative;
+            animation: waseem 4s ease-in-out 0s infinite forwards;
+        }
+        @keyframes waseem {
+            0%{
+                left: 0px;
+            }
+            50%{
+                left: 38vw;
+            }
+            100%{
+                left: 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <img src="/Pictures/Navigation.webp" alt="Loading" width="200px">
+                <li class="list" id="list-3">ByRoad</li>
+                <li class="list" id="list-2">
+                    <a id="sign-up" href="sign-up.html" target="_blank">
+                        <input type="button" value="Sign-up">
+                    </a>
+                </li>
+                <li class="list" id="list-1">
+                    <a id="login" href="login.html">
+                        <input type="button" value="Login">
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Best Way for Travelling</h1>
+    </section>
+        <img class="sponsor" src="/Pictures/appstore.png" alt="Loading">
+        <img class="sponsor" src="/Pictures/playstore.png" alt="">
+        <img class="sponsor" src="/Pictures//android.png" alt="">
+</body>
+</html>

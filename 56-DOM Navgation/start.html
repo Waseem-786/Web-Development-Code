@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <ul id="u">
+            <li>Home</li>
+            <li>Contact us</li>
+            <li>Services</li>
+            <li>About us</li>
+            <li>Waseem</li>
+        </ul>
+    </div>
+    <div class="container">
+        Second container
+    </div>
+    <script>
+        // let name = prompt ('What is your name?',"");
+        // let first = document.getElementById('main');
+        // console.log(first);
+        // first.innerHTML = `<li>Hy ${name}, Welcome to our website</li>`;
+
+
+        // let containers = document.getElementsByClassName('container');
+        // console.log(containers);
+        // We can access class like arrays className[0] = 1st ...
+        // containers[1].innerHTML = 'We can change like this';
+
+
+        // let selector = document.querySelector('.container');
+        // console.log("Returns selector", selector);
+
+        // let selector1 = document.querySelector('#main');            // First list is selected
+        // console.log('Main ID',selector1);
+        let selector2 = document.querySelectorAll('#main>#u>li');       //All lists are selected by this
+        console.log('pseudo selector', selector2);
+        // We can change list like this
+        selector2[3].innerHTML = "Was"; //4th list
+
+
+    </script>
+</body>
+
+</html>

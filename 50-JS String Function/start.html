@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Function</title>
+</head>
+<body>
+    
+    <script>
+        var str = 'My Name is Waseem Shahzad. I am from Faisalabad.';
+        
+        
+        //First Occurence of String
+        var position = str.indexOf('is'); // is
+        console.log(position);
+        //Last Occurence of String
+        var position = str.lastIndexOf('is'); // Faisalabad.
+        console.log(position);
+        
+        
+        console.log(str.slice(3,7)) // slice(start number , Finishes number-1)              It takes -ve numbers
+        console.log(str.substring(3,7)) // sub-string(start number , Finishes number-1)     It can't
+        console.log(str.substr(3,7)); // substr(starting point , How many letters you want to write from starting point)
+
+
+        var replace = str.replace('Faisalabad' , 'Rawalpindi');
+        console.log(str);
+        console.log(replace);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var string = '    Waseem Shahzad       jxbyacbaj          ';
+        console.log(string);
+        console.log(string.trim()); // White spaces from start and end are ignored.
+        
+
+        console.log(str.charAt(4));
+        console.log(str.charCodeAt(4)); // Code of 'That character
+        console.log(str[4]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Alert, Confirm and Prompt</title>
+</head>
+<body>
+    <h1>This is JAVASCRIPT Tutorial</h1>
+    <div id="box"></div>
+    <script>
+        //Alert in JS
+        alert("Welcome to Waseem' Website");
+        // Does not return something- Always OK and treated first
+
+//Prompt
+        let age = prompt("What is your age?" , "18");
+        console.log(age);
+
+        if(age>18)
+        {
+            console.log("You are allowed");
+        }
+        else
+        {
+            console.log("You are not allowed");
+        }
+        //For asking question like name.
+
+
+        //Confirm for confirming
+        let c = confirm("Do you really want to delete this post?");
+        if(c)
+        {
+            document.getElementById('box').innerHTML = '<h3>Your post have been deleted succesfully<\h3>';
+            console.log("Your post have been deleted succesfully.");
+        }
+        else
+        {
+            document.getElementById('box').innerHTML = '<h3>Your post have not been deleted.<\h3>';
+            console.log("Your post have not been deleted succesfully.");
+        }
+    </script>
+</body>
+</html>

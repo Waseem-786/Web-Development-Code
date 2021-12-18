@@ -1,0 +1,14 @@
+{
+  "name": "69-npm",
+  "version": "1.0.0",
+  "description": "first package",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "waseem"
+  ],
+  "author": "Waseem Shahzad",
+  "license": "ISC"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            color: white;
+            background-color: royalblue;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- DOM means HTML -->
+
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+    
+    
+    submit
+    focus
+
+
+    DOMcontentloaded
+
+    transitionend -->
+
+    <h1>Introduction</h1>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis pariatur ea minus explicabo rerum assumenda nostrum? Repudiandae, impedit. Reprehenderit suscipit illo vero obcaecati sit commodi minus cupiditate. Officiis a necessitatibus vero ducimus omnis ad?</p>
+    <!--  <button id="btn" onclick="showhide()"> Show/Hide</button>  -->
+    <input id="btn" type="button" onclick="showhide()" value="Show/Hide" >
+    
+    <script>
+        function showhide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            // If para display is not none then NONE it
+            if(para.style.display != 'none')
+            {
+                para.style.display = 'none';
+            }
+            // else BLCOK it
+            else{
+                para.style.display = 'block';
+            }
+            
+        }
+        // btn.addEventListener('mouseover',function over() {
+        //     alert('Inside');
+        // })
+        // btn.addEventListener('mouseout',function out() {
+        //     alert('outside');
+        // })
+    </script>
+</body>
+
+</html>

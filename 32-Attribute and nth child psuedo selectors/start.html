@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+    <style>
+        input{
+            display: block;
+            margin: auto;
+            width: 180px;
+        }
+        input[type='text']
+        {
+            background-color: steelblue;
+            color: springgreen;
+        }
+        input[type='email']
+        {
+            background-color: rgb(245, 174, 22);
+            color: springgreen;
+        }
+        a[target]
+        {
+            color: tomato;
+            font-size: 30px;
+        }
+        /* This will apply to third list */
+        li:nth-child(3)
+        {
+            color: yellow;
+        }
+        /* This will apply to every 2nd list we can write any formula */
+        li:nth-child(2n+0)
+        {
+            color: blue;
+        }
+        /* Apply to odd */
+        li:nth-child(odd)
+        {
+            color: rgb(13, 176, 240);
+        }
+        /* Apply to even */
+        li:nth-child(even)
+        {
+            color: rgb(255, 21, 185);
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="container">
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+    </form>
+    <ul>
+        <li class="list" id="list1">1st</li>
+        <li class="list" id="list2">2nd</li>
+        <li class="list" id="list3">3rd</li>
+        <li class="list" id="list4">4th</li>
+        <li class="list" id="list5">5th</li>
+        <li class="list" id="list6">6th</li>
+        <li class="list" id="list7">7th</li>
+        <li class="list" id="list8">8th</li>
+        <li class="list" id="list9">9th</li>
+        <li class="list" id="list10">10th</li>
+    </ul>
+</body>
+</html>

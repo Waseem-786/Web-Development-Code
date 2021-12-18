@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+            <li>Item-9</li>
+            <li>Item-10</li>
+        </ul>
+    </div>
+
+    <script>
+        // It don't give an error of redeclare str.
+        var str = "Zain Chawal h";
+        var str = "Zain prh le apna";
+        console.log(str);
+
+
+        // It gives error of redeclare that is why we preferred this
+        let a = "Waseem Great";
+        // let a = "Waseem Legendary";
+
+        //constant value can't br change
+        const c = 7;
+        // c = 3;
+        if (c == 3) {
+            console.log("It is constant");
+        }
+        else if (c > 3) {
+            console.log("It is not constant and greater then 3");
+        }
+        else {
+            console.log("It is not constant and less then 3");
+        }
+
+
+
+        const cases = "Zain";
+        switch (cases) {
+            case 'Waseem':
+                {
+                    console.log('My Name');
+                    break;
+                }
+            case 'Zain':
+                {
+                    console.log('Zain Name');
+                    break;
+                }
+            default:
+                {
+                    console.log('not my Name');
+                    break;
+                }
+        }
+    </script>
+</body>
+
+</html>

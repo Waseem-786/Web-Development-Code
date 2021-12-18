@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        .nav{
+            color: yellow;
+            background-color: black;
+            border-radius: 25px;
+            display: grid;
+            grid-template-columns: 1.3fr 3fr 1.3fr;
+            grid-gap: 1rem;
+        }
+        .item{
+            /* border: 2px solid red; */
+        }
+        #mid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        span{
+            
+            font-size: 20px;
+            margin: 0px 33px;
+        }
+        span:hover,h1:hover{
+            color: rgb(110, 110, 12);
+            cursor: pointer;
+        }
+        #right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #left img{
+            width: 40px;
+            height: 40px;
+        }
+        input[type='text']{
+            border-radius: 10px;
+            margin: 18px;
+        }
+    </style>
+</head>
+<body>
+        <nav class="nav">
+            <div class="item" id="left">
+                <img src="/Pictures/img998.jpg" alt="Loading Pic">
+                <h1>Waseem Club</h1>
+            </div>
+            <div class="item" id="mid">
+                <span>Home</span>
+                <span>About us</span>
+                <span>Services</span>
+                <span>Contact us</span>
+            </div>
+            <div class="item" id="right">
+                <input type="text" placeholder="Search here">
+                <input type="button" value="Search">
+            </div>
+        </nav>
+</body>
+</html>

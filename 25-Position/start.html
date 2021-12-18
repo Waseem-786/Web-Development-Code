@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container{
+            border: 6px solid lime;
+            background-color: mediumslateblue;
+            height: 4323px;
+        }
+        .box{
+            border: 2px solid navy;
+            background-color: orchid;
+            margin: 5px;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+        #box1{
+            /* Sticky palce a gap and stick to its position it is used for website top sides */
+            position: sticky;
+            top: 200px;
+        }
+        #box2{
+            /* Same as sticky but do not place a gap it is used for chatbox at side of website */
+            position: fixed;
+            right: 2px;
+        }
+        #box3{
+            /* relates according to its original position and will leave a gap at its normal position*/
+            position: relative;
+            bottom: 20px;
+            
+        }
+        #box4{
+            /* changes according to its parent position not leave a gap*/
+            position: absolute;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h2>1st Box</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur </p>
+        </div>
+        <div class="box" id="box2">
+            <h2>2nd Box</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur </p>
+        </div>
+        <div class="box" id="box3">
+            <h2>3rd Box</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur </p>
+        </div>
+        <div class="box" id="box4">
+            <h2>4th Box</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur </p>
+        </div>
+    </div>
+    
+</body>
+</html>

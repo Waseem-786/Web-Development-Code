@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and z-index</title>
+    <style>
+        /* z-index will only work for positioned elements like absolute,relative,fixed,sticky */
+        /* It is not working for static position because it is default */
+        /* z-index is used for overlapping of one element into another. z-index will decide that which element is at top or which is at bottom */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            border-radius: 8px;
+        }
+        #box1{
+            /* That element is at top which z-index is greater */
+            position: relative;
+            top: 2px;
+            z-index: 2;
+            background-color: red;
+        }
+        #box2{
+            position: relative;
+            bottom: 120px;
+            z-index: 1;
+            /* Display: none means place is also disappear */
+            display: none;
+            background-color: green;
+        }
+        #box3{                            
+            /* Visibility hidden means element is hide but the place is still there */
+            /* visible is default value */
+            /* visibility: hidden; */
+            background-color: blue;
+        }
+        #box4{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box&*4     $ is used for 1,2,3,4 and it is great for ids -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

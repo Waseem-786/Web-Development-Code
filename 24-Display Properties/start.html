@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        /* Margin-auto is used in Block elements by using width and inline elements can use margin-auto without using width */
+        *{
+            box-sizing: border-box;
+        }
+        .head {
+            margin: auto;
+            width: 707px;
+            border: 2px solid red;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            height: 90px;
+            width: 150px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .container{
+            border: 10px solid lightseagreen;
+            width: 707px;
+            margin: 10px auto;
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box{
+            display: inline-block;
+            border: 4px solid blue;
+            background-color: darkkhaki;
+            margin: 9px;
+            padding: 20px;
+            width: 208px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <h2>This is Waseem's Blog</h2>
+        <img src="/Pictures/html-1.jpg" alt="Loading">
+        <!--Inline element--> -->
+    </header>
+    <section class="container">
+        <div class="box">
+            <h3>1st Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates aperiam obcaecati, quod harum beatae deserunt quos, exercitationem iure corporis quisquam ab? Autem minus, iusto eos eveniet similique tempore cum quam laborum iste sapiente saepe illum non, quisquam hic. Ut recusandae corporis, dolores pariatur voluptatem enim aspernatur blanditiis. Rem sequi dolor alias voluptatibus dignissimos.</p>
+        </div>
+        <div class="box">
+            <h3>2nd Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates aperiam obcaecati, quod harum beatae deserunt quos, exercitationem iure corporis quisquam ab? Autem minus, iusto eos eveniet similique tempore cum quam laborum iste sapiente saepe illum non, quisquam hic. Ut recusandae corporis, dolores pariatur voluptatem enim aspernatur blanditiis. Rem sequi dolor alias voluptatibus dignissimos.</p>
+        </div>
+        <div class="box">
+            <h3>3rd Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates aperiam obcaecati, quod harum beatae deserunt quos, exercitationem iure corporis quisquam ab? Autem minus, iusto eos eveniet similique tempore cum quam laborum iste sapiente saepe illum non, quisquam hic. Ut recusandae corporis, dolores pariatur voluptatem enim aspernatur blanditiis. Rem sequi dolor alias voluptatibus dignissimos.</p>
+        </div>
+    </section>
+</body>
+
+</html>

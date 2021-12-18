@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+
+    <style>
+
+        /* navigation bar starts */
+        .navigation {
+            position: sticky;
+            top: 0px;
+            color: yellow;
+            background-color: rgb(88, 85, 85);
+            border-radius: 20px;
+        }
+
+        .list {
+            font-size: 22px;
+            margin-top: 20px;
+            margin-left: 61px;
+        }
+
+        #waseem {
+            font-size: 33px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        #home{
+            color: yellow;
+            text-decoration: none;
+        }
+
+        .list:hover,#home:hover,#waseem:hover {
+            color: lime;
+        }
+
+        ul {
+            overflow: auto;
+        }
+
+        .unordered li {
+            float: left;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        #btn {
+            float: right;
+            border-radius: 7px;
+            margin: 18px 15px;
+            height: 20px;
+            width: 180px;
+        }
+
+        #search {
+            float: right;
+            margin-right: 30px;
+            margin-top: 20px;
+            width: 60px;
+            cursor: pointer;
+        }
+        /* Navigation bar ends */
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: darkgrey;
+            height: 2000px;
+        }
+
+        picture {
+            float: right;
+            display: inline;
+        }
+
+        section {
+            margin: 110px 150px;
+        }
+
+        .size {
+            background-color: rgb(235, 235, 130);
+            width: 300px;
+            height: 41px;
+        }
+
+        .btn {
+            background-color: yellow;
+            color: black;
+            width: 72px;
+            height: 33px;
+            cursor: pointer;
+            margin-left: 16px;
+            margin-top: 10px;
+        }
+
+        #search:hover,
+        .btn:hover {
+            background-color: lime;
+            color: red;
+        }
+
+        label {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        section ::placeholder {
+            font-size: 20px;
+        }
+        /* contact us starts */
+        .contact{
+            color: yellow;
+            float: left;
+            list-style: none;
+            cursor: pointer;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 61px;
+        }
+        a#contact-us{
+            float: left;
+            list-style: none;
+            cursor: pointer;
+            color: yellow;
+            text-decoration: none;
+            font-size: 43px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        #contact-us:hover,.contact:hover{
+            color: lime;
+        }
+        .bottom{
+            position: relative;
+            top: 220px;
+            background-color: rgb(88, 85, 85);
+            border: 2px solid red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="unordered">
+            <li id="waseem">Waseem Sports Club</li>
+            <li class="list">
+                <a href="website1.html" id="home">Home</a>
+            </li>
+            <li class="list">Games</li>
+            <li class="list">Thinking</li>
+            <li class="list">Others</li>
+            <li class="list">Others</li>
+            <li class="list">Others</li>
+            
+            <div class="search">
+                <input type="button" value="Search" id="search">
+                <input type="text" name="btn" id="btn" placeholder="Search here">
+
+            </div>
+        </ul>
+    </nav>
+    
+    <picture>
+        <img src="/Pictures/download.jpg" alt="Loading" width="600" height="510">
+    </picture>
+    
+    
+    <section>
+        <label for="Name" class="login">Name</label>
+        <div>
+            <input class="size" type="text" name="Name" id="Name" placeholder="Type your name here">
+        </div>
+        <label for="Age" class="login">Age</label>
+        <div>
+            <input class="size" type="number" name="Age" id="Age" placeholder="Enter your age">
+        </div>
+        
+        <label for="Email" class="login">Email</label>
+        <div>
+            <input class="size" type="email" name="Email" id="Email" placeholder="Enter your Email">
+        </div>
+        
+        <label for="Password" class="login">Password</label>
+        <div>
+            <input class="size" type="password" name="password" id="Password" placeholder="Enter your password">
+        </div>
+        <div>
+            <input class="btn" type="button" value="Login">
+            <input class="btn" type="button" value="Sign up">
+            <input class="btn" type="reset" value="Reset">
+        </div>
+    </section>
+    <nav class="bottom">
+        <ul class="unordered1">
+            <li>
+                <a id="contact-us" href="contact.html" target="_blank">Contact us</a>
+            </li>
+            <li class="contact" id="email">Email</li>
+            <li class="contact" id="whatsapp">Phone Number/Whatsapp</li>
+            <li class="contact" id="facebook">Facebook</li>
+            <li class="contact" id="twitter">Twitter</li>
+            <li class="contact" id="instagram">Instagram</li>
+        </ul>
+    </nav>
+    
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+       /*Universal Selector for all*/
+    *{
+        box-sizing: border-box;
+        /* box-sizing means that width is not changed when we change padding. It adjusts himself according to given width otherwise actual width is sum of padding,margin and given width*/
+        padding: 0;
+        margin: 0;
+    }
+       
+        #first{
+            color: darkgoldenrod;
+            background-color: lightgreen;
+            border: 4px solid brown;
+            width: 350px;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 2px;
+        }
+        body{
+            background-color: coral;
+        }
+    
+        #second{
+            color: darkgoldenrod;
+            background-color: lightgreen;
+            border: 4px solid brown;
+            width: 400px;
+            border-radius: 10px;
+            /* We can use right left top bottom also in padding and margin */
+            padding: 20px;
+
+            margin: 2px;
+            /* Width don't change but height is adjusted according to width */
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Box Model</h1>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam blanditiis quibusdam laborum repellat excepturi officia expedita similique dolore perspiciatis, molestias accusantium consectetur ea, modi culpa quidem veritatis tenetur quas vel qui sit. Beatae amet consequatur officia fuga! Distinctio esse cupiditate sequi repudiandae dignissimos necessitatibus aspernatur quae quos incidunt?</p>
+    </div>
+    <div class="container">
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est id voluptas aliquam quos nobis dicta eos iste, sed corrupti ad iusto beatae fugiat ea voluptates minima accusantium reiciendis impedit quam fuga consequuntur quaerat? Cupiditate!</p>
+    </div>
+
+    
+</body>
+</html>

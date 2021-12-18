@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        This is JavaScript Tutorial.
+    </div>
+
+    <script>
+        // Printing the math object
+        let math  = Math;
+        console.log(Math);
+
+        // Printing the constants from math object
+        console.log("LN2 is : "+Math.LN2);
+        console.log("LN10 is : "+Math.LN10);
+        console.log("LOG(10) is : "+Math.log(10));
+// E: 2.718281828459045
+// LN2: 0.6931471805599453
+// LN10: 2.302585092994046
+// LOG2E: 1.4426950408889634
+// LOG10E: 0.4342944819032518
+// PI: 3.141592653589793
+// SQRT1_2: 0.7071067811865476
+// SQRT2: 1.4142135623730951
+
+
+        // Printing the functions from math object
+        let a = 2.45;
+        
+        // Round Function
+        console.log("Round Value of a is : "+Math.round(a));
+        
+        // Power Function
+        console.log("Power Function is : "+Math.pow(2,4));
+        
+        // Square Root Function
+        console.log("Square Root Function is : "+Math.sqrt(4));
+        
+        // Ceil and Floor Function
+        console.log("Ceil Function is : "+Math.ceil(a));
+        console.log("Floor Function is : "+Math.floor(a));
+        
+        // ABS Function
+        let b = -23;
+        console.log("ABS Function of a is : "+Math.abs(a));
+        console.log("ABS Function of b is : "+Math.abs(b));
+
+        // Trigonometric Function
+        console.log("Sin Function is : "+Math.sin(Math.PI/2));
+        console.log("Cos Function is : "+Math.cos(0));
+        console.log("Tan Function is : "+Math.tan(0));
+
+        // Minimum and Maximum Function
+        console.log("Max Function is : "+Math.max(1,5,8,23,54));
+        console.log("Min Function is : "+Math.min(1,5,8,23,54));
+
+        // Random Values b/w 0 and 1
+        console.log("Random Function b/w 0 and 1 is : "+Math.random());
+        
+        // Random values b/w some values
+        
+        // let rand = a+(b-a)*Math.random();
+        let rand = 2+(100-2)*Math.random();
+        console.log("Random Function b/w 2 and 100 is : "+rand);
+    </script>
+</body>
+</html>

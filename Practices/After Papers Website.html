@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyPaisa</title>
+    <style>
+        #num{
+            /* border: 2px solid black; */
+            /* width: 26%; */
+            /* margin: auto; */
+        }
+        #date{
+            /* padding: 5px; */
+            /* width: 28%; */
+            margin-top: 30px;
+            /* border: 2px solid red; */
+        }
+        #date #Date{
+            margin: 0px 3px;
+        }
+        #buttons{
+            /* border: 2px solid darkblue; */
+        }
+        #btn_line{
+            font-size: 10px;
+            margin: 3px 360px;
+            color: green;
+            font-weight: bold;
+        }
+        input[type= 'button']{
+            width: 250px;
+            margin: 10px 66px;
+            border-radius: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(14, 235, 14);
+        }
+        .or{
+            margin: 0px 178px;
+        }
+        .scan{
+            opacity: 0.7;
+            font-size: 14px;
+            margin: 0px 76px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter ID Card Details</h2>
+    <p>To verify your EasyPaisa account, please enter your CNIC details</p>
+    
+    <div id="num">
+        <label for="number">Enter Your CNIC Number</label>
+        <input type="text" name="CNIC" id="number" placeholder="33102-1333555-7">
+    </div>
+
+    <div id="date">
+        <label for="Date">Enter CNIC Date of Issue</label>
+        <input type="text" id="Date" placeholder="03-07-2021">
+        <img src="/Pictures/cn.htm" alt="CNIC Loading">
+    </div>
+    <p id="btn_line">View CNIC Date of Issue</p>
+    
+    <div id="buttons">
+        <input type="button" value="NEXT">
+        <p class="or">OR</p>
+        <hr>
+        <p class="scan">Scan your CNIC to get auto information</p>
+        <input type="button" value="Scan Your CNIC">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow Function Tutorial.    
+    </div>
+
+    <script>
+        let a = 2;
+        let b = 3;
+        function fun(a) {
+            console.log(a);
+        }
+        fun(a);
+
+        let fun1 = ()=>{
+            console.log("It is Arrow Function");
+        };
+        fun1();
+        // Shortcut arrow function
+        setTimeout(() => {
+            console.log("Inside settimeout");
+        }, 5000);
+        // Return Value in Arrow Function
+        let sum1 = (a,b)=> a+b;
+        // let sum1 = ()=> 
+        // {
+        //     return a+b;
+        // }
+        let half = a=>a/2;
+
+        // MAIN use of ARROW function
+        let obj1={
+            greeting:"Hello",
+            name:["Waseem","Hashir","Zeeshan"],
+            speak(){
+                this.name.forEach(element => {
+                    // this.greeting points to parent(obj1) if we use arrow function
+                    // if we use function then it points to function
+                    console.log(this.greeting+" my name is "+element);
+                });
+            }
+        }
+        obj1.speak();
+        let obj2={
+            greeting:"Hello",
+            name:["Waseem","Hashir","Zeeshan"],
+            speak(){
+                this.name.forEach(function name(element) {
+                    console.log(this.greeting+" my name is "+element);
+                    // if we use function then it points to function
+                }); 
+        }
+    }
+        obj2.speak();
+    </script>
+</body>
+</html>

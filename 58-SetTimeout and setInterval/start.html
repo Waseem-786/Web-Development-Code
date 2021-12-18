@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout and Set Interval</title>
+
+    <style>
+        #box{
+            font-size: 30px;
+            color: white;
+            background-color: black;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is JavaScript Tutorials    
+    </div>
+    <div id="box"></div>
+    <script>
+        console.log('This is Tutorial 58');
+        // setTimeout --> Allow us to run the function once after the interval of time
+        // setinterval --> Allow us to run the function repeatedly after the interval of time
+
+        function greet(name)
+        {
+            console.log('My name is '+name);
+            document.getElementById('box').innerHTML = "Waseem";
+        }
+        // setTimeout(function name /(not function calling),time in millisecond,function argument);
+        // setTimeout(greet,5000,"Waseem");
+
+
+        let timeOut = setTimeout(greet,5000,"Waseem");
+        clearTimeout(timeOut);
+        // Clear Timeout for clear time not use timeout
+
+
+        // Set Interval after specific time function runs again and again
+        let intervalid = setInterval(greet, 1000, "Hashir");
+        clearInterval(intervalid);
+        
+
+
+        // Display Date and Time
+
+        function date_and_time()
+        {
+            let time = new Date();
+            document.getElementById('box').innerHTML = time;
+        }
+        setInterval(date_and_time,1000);
+    </script>
+</body>
+</html>

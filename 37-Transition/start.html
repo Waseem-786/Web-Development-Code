@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px violet;
+            background-color: cyan;
+            border: 3px solid red;
+            height: 200px;
+            width: 200px;
+            /* transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.3s; */
+            transition: all 2s ease-in-out 0.1s;
+        }
+        .box:hover{
+            border-radius: 45px;
+            background-color: tomato;
+            color: green;
+            box-shadow: inset 5px 5px 2px 2px violet;
+            text-shadow: 2px 2px white;
+            height: 100vh;
+            width: 100vw;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>EID MUBARAK</h3>
+        </div>
+    </div>
+</body>
+</html>

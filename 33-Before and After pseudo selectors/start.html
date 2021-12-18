@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+/* Before pseudo selector requires content and position absolute */
+        header::before {
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900');
+            /* Position absolute */
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* Position absolute is set */
+            width: 100vw;
+            height: 100vh;
+            /* It is used to set image under the content */
+            z-index: -1;
+            /* It is used for transparent the image */
+            opacity: 0.6;
+        }
+
+        .unordered {
+            display: flex;
+
+        }
+
+        .list {
+            list-style: none;
+            margin: 3px 30px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 350px;
+            margin: 40px 160px;
+        }
+
+        h1 {
+            font-family: cursive;
+        }
+
+        p {
+            text-align: center;
+            padding: 10px 60px;
+        }
+        section::before{
+            content: "Before pseudo selector";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="unordered">
+                <li class="list">Home</li>
+                <li class="list">Services</li>
+                <li class="list">Item</li>
+                <li class="list">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="text">
+        <h1>Welcome to our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae, facere magnam sit, sed dolores
+            maiores culpa, illum praesentium minus in temporibus id doloremque quia delectus. Vitae iusto iure magni?
+            Animi numquam quibusdam totam corrupti temporibus unde ratione! Delectus commodi amet odio aliquam et sunt
+            distinctio hic cumque repellendus quasi!</p>
+    </section>
+</body>
+
+</html>

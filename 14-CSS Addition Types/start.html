@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types</title>
+    
+   
+    
+    <!-- Internal CSS -->
+    <style>
+        h1.was,p.was{
+            color: turquoise;
+            background-color: brown !important; 
+            /* backgroumd color of this is most important and color is important in later one */
+        }
+    </style>
+   <!-- Internal CSS -->
+
+   <link rel="stylesheet" href="start.css">
+</head>
+
+
+<body>
+
+<!-- Precedence of Inline is most and later is more important in External and Internal but if we use !important in Internal then it becomes most important -->
+
+
+
+
+
+    <!-- INLINE CSS -->
+    <h1 style="color: gold; background-color: grey;">CSS Types</h1>
+    <p style="background-color: skyblue; color:black;">This is My First Program of CSS</p>
+    <!-- INLINE CSS -->
+
+
+
+    <!-- INTERNAL CSS -->
+<h1 class="was">Introduction</h1>
+    <p class="was">Waseem is Nustian</p>
+<!-- Internal CSS -->
+
+
+
+
+<!-- External CSS -->
+<p class="css">
+    This is My external CSS Type
+</p>
+
+</body>
+</html>

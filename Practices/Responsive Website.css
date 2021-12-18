@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav ul{
+    display: flex;
+}
+nav{
+    background-color: black;
+}
+.list{
+    color: white;
+    list-style: none;
+    margin: 10px 20px;
+}
+.list:hover{
+    color: tomato;
+    font-size: 20px;
+}

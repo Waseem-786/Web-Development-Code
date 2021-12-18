@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    This is about loops.
+    <script>
+        //For loops
+        for(let i=0;i<=3;i++)
+        {
+            console.log(i);
+        }
+
+        // For loops in arrays
+        let friends = ["Hashir","Ali","Hussain"];
+        for(let i=0;i<friends.length;i++)
+        {
+            console.log("Hy "+friends[i]);
+        }
+
+        //Modern Way of for loops in arrays
+        friends.forEach(function waseem(Fri) {
+            console.log("Hello Friend "+Fri+" to modern JavaScript");
+            
+        })
+
+        // For-of Loop for arrays
+        // for(any name, array name)
+        for(Friday  of friends)
+        {
+            console.log("Hello Friend "+Friday+" to modern JavaScript again");
+        }
+
+        //For Loop in Object
+        let employee = {
+            name: "Waseem",
+            Salary: 2000,
+            university: "MCS"
+        }
+        //For in Loop---- It is use to iterate for loops over objects
+        for(key in employee)
+        {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+
+
+        //While Loop
+        let j=0;
+        while(j<4)
+        {
+            console.log(`${j} is lessthen 4`);
+            j++;
+        }
+
+
+
+        //Do-while Loop
+        let k=0;
+        do
+        {
+            console.log(`${k} is lessthen 4`);
+            k++;
+        }while(k<4);
+    </script>
+</body>
+</html>

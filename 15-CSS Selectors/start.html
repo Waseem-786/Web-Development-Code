@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        h1
+        {
+            color: yellow;
+            background-color: grey;
+        }
+        .border
+        {
+            border: 2px solid blue;
+        }
+        #firstpara{
+            color: darkgreen;
+            background-color: lightblue;
+        }
+
+        /* Grouping Selector */
+        footer,span{
+            color: darkmagenta;
+            background-color: lightsalmon;
+            border: 8px solid darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <p id="firstpara" class="border">This is 1st paragraph</p>
+    <p class="border">This is 2nd paragraph</p>
+<div>
+    <span>This is span</span>
+    <footer>
+        This is my footer.
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing JSON in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is JSON Tutorial.
+    </div>
+    <script>
+        // JSON is used for transportation to transfer object from 1 network to other
+        let myobj = {
+            name : "Waseem Shahzad",
+            semester:"Second",
+            universsity:"MCS",
+            Friend:["Hashir","Faizan","Zeeshan"]
+        }
+        console.log(myobj);
+
+        // Convert complete object in String 
+        let json_str = JSON.stringify(myobj);
+        console.log(json_str);
+        // Now we can apply string function on object
+        let replace  = json_str.replace('Second',"Third");
+        console.log(replace);
+
+        // Again convert it(String) into its original form (Object)
+        let json_parse = JSON.parse(replace);   //It should be valid JSON String
+        console.log(json_parse);
+
+    </script>
+</body>
+</html>

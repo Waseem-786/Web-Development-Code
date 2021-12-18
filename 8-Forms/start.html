@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Form</title>
+</head>
+<body>
+    <h3>This is HTML form tutorials</h3>
+    <form action="backened.php">
+
+
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="MyName" id="name">
+        </div>
+        <br>
+
+
+        <label for="Roll">Roll Number</label>
+        <div>
+            <input type="number" name="myNumber" id="Roll">
+        </div>
+        <br>
+
+
+        <label for="email">Eamil</label>
+        <div>
+            <input type="email" name="MyEmail" id="email">
+        </div>
+        <br>
+
+
+        <label for="pass">Password</label>
+        <div>
+            <input type="password" name="password" id="pass">
+        </div>
+        <br>
+
+
+        <div>
+            Are you Pakistani <input type="checkbox" name="MyNationality">
+        </div>
+        <br>
+
+
+        <div>
+            Date <input type="date" name="MyDate">
+        </div>
+        <br>
+
+
+        <div>
+            Gender:
+            <label for="male">Male</label>
+                <input type="radio" name="MyGender" id="male">
+            <label for="female">Female </label>
+                <input type="radio" name="MyGender" id="female">
+            <label for="other">Other</label> 
+                <input type="radio" name="MyGender" id="other">
+        </div>
+        <br>
+
+
+        Write few lines:
+        <div>
+            <textarea name="Mytext" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+
+        <div>
+            <label for="language">Language</label>
+            <select name="Language" id="language">
+
+                <option value="English">English</option>
+                <option value="Urdu">Urdu</option>
+                <option value="German">German</option>
+
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="color">Select color</label>
+             <input type="color" name="color" id="color">
+        </div>
+        <br>
+
+
+        <div>
+            <input type="reset" value="Reset Now">
+            <input type="submit" value="Submit now">
+        </div>
+    </form>
+</body>
+</html>

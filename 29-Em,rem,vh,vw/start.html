@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em,rem,vh,vw</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        .container {
+            border: 3px solid red;
+            text-align: center;
+            font-size: 10px;
+
+
+
+
+
+            /* height: 100vh;
+            Viewport height,width. It is very useful for complete page height , width
+            width: 100vw; */
+        }
+
+        #heading1 {
+            /* em means its size relates according to parent class(container font-size 10px) so its size 5em==5x10=50px  */
+            font-size: 5em;
+            padding: 2em;
+            /* padding relates not to parent but to heading: 1 */
+        }
+        #heading2{
+            /* rem relates according to html tag and padding also in this case relates to html tag */
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading1">First heading</h1>
+        <h1 id="heading2">Second heading</h1>
+        <h1 id="heading3">Third Heading</h1>
+    </div>
+</body>
+
+</html>

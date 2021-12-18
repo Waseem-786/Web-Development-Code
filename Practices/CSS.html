@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS reminding</title>
+    <style>
+        header {
+            background-color: black;
+            border-radius: 10px;
+            height: 80px;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        body {
+            color: yellow;
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+        }
+
+        #right {
+            padding: 13px 2px;
+            height: 24px;
+        }
+
+        .class {
+            text-align: center;
+            /* border: 2px solid red; */
+            height: 50px;
+        }
+
+        #mid {}
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            margin: 0px 20px;
+            list-style: none;
+        }
+
+
+
+        @media (max-width: 1400px) and (min-width: 1028px) {
+            body {
+                background-color: red;
+                font-size: 30px;
+            }
+            header {
+            background-color: black;
+            border-radius: 10px;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-gap: 1rem;
+        }
+        li {
+            margin: 0px 6px;
+            list-style: none;
+        }
+        }
+
+        @media (max-width:1028px) {
+            body {
+                /* background-color: ; */
+                font-size: 30px;
+            }
+
+            li {
+                margin: 0px 15px;
+                list-style: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="class" id="left">
+            <p>Waseem Website</p>
+        </div>
+
+
+        <div class="class" id="mid">
+            <nav>
+                <ul>
+                    <li class="list-1">Home</li>
+                    <li class="list-2">Services</li>
+                    <li class="list-3">Contact us</li>
+                    <li class="list-4">Our Website</li>
+                    <li class="list-5">Emails</li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="class" id="right">
+            <input type="text">
+            <input type="button" value="Search">
+        </div>
+
+    </header>
+</body>
+
+</html>
